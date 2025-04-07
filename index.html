@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOT Meme Coin - Freedom Awaits</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.20.6/babel.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const Header = () => (
+      <header className="bg-red-800 p-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold">AOT Meme Coin</h1>
+        <p className="mt-2 text-lg md:text-xl">The Coin of Freedom Inspired by Attack on Titan</p>
+      </header>
+    );
+
+    const Pitch = () => (
+      <section className="max-w-4xl mx-auto p-6 text-center">
+        <h2 className="text-3xl font-semibold mb-4">Why Buy AOT Meme Coin?</h2>
+        <p className="text-lg mb-4">
+          AOT Meme Coin isn’t just another crypto—it’s a rebellion against control, a salute to freedom, and a nod to the epic saga of Attack on Titan. 
+          Tired of walls closing in on your finances? This coin is your wings of freedom. 
+        </p>
+        <ul className="text-left list-disc list-inside mx-auto max-w-2xl mb-6">
+          <li><strong>Freedom First:</strong> Decentralized and untamed, just like Eren’s fight for liberty.</li>
+          <li><strong>Meme Power:</strong> Backed by the unstoppable energy of AOT fans and meme culture.</li>
+          <li><strong>Community-Driven:</strong> Join the Survey Corps of investors breaking free from the ordinary.</li>
+        </ul>
+        <p className="text-lg italic">“Dedicate your hearts!” — and your wallets — to a coin that stands for something bigger.</p>
+      </section>
+    );
+
+    const CallToAction = () => (
+      <section className="text-center p-6 bg-gray-800">
+        <h3 className="text-2xl font-bold mb-4">Ready to Break the Walls?</h3>
+        <button 
+          onClick={() => alert('Buy AOT Meme Coin now! (This is a demo - add your real purchase link here.)')} 
+          className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300"
+        >
+          Buy AOT Meme Coin Now
+        </button>
+      </section>
+    );
+
+    const App = () => (
+      <div>
+        <Header />
+        <Pitch />
+        <CallToAction />
+      </div>
+    );
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
